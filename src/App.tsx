@@ -14,6 +14,7 @@ import { AdoptionCompletionDemo } from "./pages/AdoptionCompletionDemo";
 import PetListingDetailsPage from "./pages/PetlistingdetailsPage";
 import EditAdoptionListing from "./pages/EditAdoptionListing";
 import ListingDetailsPage from "./pages/ListingDetailsPage";
+import ModalPreview from "./pages/ModalPreview";
 
 function App() {
   return (
@@ -39,8 +40,6 @@ function App() {
         <Route path="/adoption-completion-demo" element={<AdoptionCompletionDemo />} />
 
         {/* Test Route */}
-      </Routes>
-    </BrowserRouter>
         <Route path="/listings/:id" element={<PetListingDetailsPage />} />
         <Route path="/list-for-adoption" element={<EditAdoptionListing />} />
         <Route path="/my-listings/:id" element={<ListingDetailsPage />} />

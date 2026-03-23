@@ -348,7 +348,7 @@ export function RegisterForm() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-[100px] xl:mt-0">
       <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
         Create an account
       </h2>
