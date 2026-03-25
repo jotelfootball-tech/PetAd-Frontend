@@ -7,7 +7,7 @@ export function setEscrowStatus(value: string) {
 }
 
 export const escrowStatusHandler = http.get(
-	"*/escrow/:id/status",
+	"/api/escrow/:id/status",
 	({ params }) => {
 		return HttpResponse.json({
 			id: params.id,
