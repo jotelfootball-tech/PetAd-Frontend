@@ -1,6 +1,7 @@
+import "@testing-library/jest-dom";
 import { cleanup } from "@testing-library/react";
+import { afterAll, afterEach, beforeAll } from "vitest";
 import { server } from "../mocks/server";
-import { beforeAll, afterEach, afterAll } from "vitest";
 
 // ─── MSW ──────────────────────────────────────────────────────────────────────
 // Start the server before all tests, reset overrides between tests, and close

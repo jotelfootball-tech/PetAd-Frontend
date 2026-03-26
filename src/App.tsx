@@ -14,9 +14,13 @@ import { AdoptionCompletionDemo } from "./pages/AdoptionCompletionDemo";
 import PetListingDetailsPage from "./pages/PetlistingdetailsPage";
 import EditAdoptionListing from "./pages/EditAdoptionListing";
 import ListingDetailsPage from "./pages/ListingDetailsPage";
+import { SettlementSummaryPage } from "./pages/SettlementSummaryPage";
 import ModalPreview from "./pages/ModalPreview";
 import StatusPollingDemo from "./pages/StatusPollingDemo";
+<<<<<<< feat/custody-timeline-page
 import CustodyTimelinePage from "./pages/CustodyTimelinePage";
+=======
+>>>>>>> main
 
 function App() {
 
@@ -40,6 +44,7 @@ function App() {
         <Route path="/list-for-adoption" element={<EditAdoptionListing />} />
         <Route path="/my-listings/:id" element={<ListingDetailsPage />} />
         <Route path="/notifications" element={<NotificationPage />} />
+        <Route path="/adoption/:adoptionId/settlement" element={<SettlementSummaryPage />} />
 
         {/* Custody Routes */}
         <Route path="/custody/:custodyId/timeline" element={<CustodyTimelinePage />} />
@@ -51,7 +56,7 @@ function App() {
       </Route>
     </Routes>
   );
-  
+
 }
 
 export default App;
