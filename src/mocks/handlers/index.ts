@@ -4,6 +4,7 @@ import { approvalHandlers } from "./approval";
 import { disputeHandlers } from "./dispute";
 import { notifyHandlers } from "./notify";
 import { filesHandlers } from "./files";
+import { adoptionHandlers } from "./adoption";
 
 /**
  * All MSW request handlers, combined from every domain module.
@@ -16,4 +17,5 @@ export const handlers = [
 	...disputeHandlers,
 	...notifyHandlers,
 	...filesHandlers,
+	...adoptionHandlers,
 ];
