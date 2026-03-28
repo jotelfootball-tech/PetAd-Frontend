@@ -1,11 +1,12 @@
 import { http, HttpResponse, delay } from "msw";
 
+const BASE_URL = "http://localhost:3000/api";
 
 // ─── Handlers ─────────────────────────────────────────────────────────────────
 
 export const approvalHandlers = [
 	// GET /api/adoption/:adoptionId/approvals — list approvals for an adoption
-	http.get("/api/adoption/:adoptionId/approvals", async () => {
+	http.get(`${BASE_URL}/adoption/:adoptionId/approvals`, async () => {
 		await delay(800);
 		return HttpResponse.json([
 			{
@@ -30,7 +31,7 @@ export const approvalHandlers = [
 	}),
 
 	// GET /api/admin/approvals — admin approval queue
-	http.get("/api/admin/approvals", async ({ request }) => {
+	http.get(`${BASE_URL}/admin/approvals`, async ({ request }: { request: Request }) => {
 		await delay(1000);
 		const url = new URL(request.url);
 		const overdueOnly = url.searchParams.get("overdueOnly") === "true";

@@ -8,14 +8,12 @@ import {
   AlertCircle, 
   Clock, 
   CheckCircle2, 
-  XCircle,
   MoreHorizontal
 } from "lucide-react";
 import { adoptionService } from "../api/adoptionService";
 import { StatusFilterChips } from "../components/ui/StatusFilterChips";
 import { Skeleton } from "../components/ui/Skeleton";
 import { EmptyState } from "../components/ui/emptyState";
-import type { AdminApprovalQueueItem } from "../types/adoption";
 
 const STATUS_OPTIONS = [
   { value: "PENDING", label: "Pending" },
